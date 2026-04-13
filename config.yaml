@@ -1,0 +1,32 @@
+agent:
+  name: "AI Security Hardening Agent"
+  version: "1.0.0"
+  mode: "safe"          # safe (recommend only) | aggressive (auto-fix)
+  log_level: "INFO"
+
+ai:
+  provider: "anthropic"  # anthropic | ollama
+  model: "claude-sonnet-4-6"
+  ollama_model: "llama3"
+  ollama_base_url: "http://localhost:11434"
+
+scan:
+  ports: true
+  services: true
+  auth: true
+  firewall: true
+  patches: true
+  encryption: true
+
+monitor:
+  enabled: false
+  interval_minutes: 30
+
+data:
+  db_path: "data/security_agent.db"
+  reports_dir: "data/reports"
+
+remediation:
+  confirm_before_execute: true
+  backup_configs: true
+  backup_dir: "data/backups"
