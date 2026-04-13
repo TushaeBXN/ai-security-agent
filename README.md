@@ -1,3 +1,5 @@
+![Gemini_Generated_Image_mitvyimitvyimitv](https://github.com/user-attachments/assets/5570ec73-8810-425e-ac0f-b86a7e11dccf)
+
 # AI Security Hardening Agent
 
 A local AI-powered network and system hardening agent. It audits your machine, explains risks in plain English using Claude, and optionally executes remediations.
